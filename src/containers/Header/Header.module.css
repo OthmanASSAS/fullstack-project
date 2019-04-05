@@ -1,0 +1,21 @@
+.Header {
+    background-color: rgb(52, 147, 202);
+}
+
+.Container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Container li {
+    margin: 20px 20px;
+    list-style: none;
+}
+
+.Container li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
