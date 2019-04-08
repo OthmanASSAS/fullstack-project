@@ -1,5 +1,13 @@
 .RessourcesContainer{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin-top: 15px
+}
+
+.RessourcesButton {
+    background-color: rgb(52, 147, 202, 0.6);
+    border-style: none;
+    border-radius:12px;
+    padding: 5px 8px;
 }
