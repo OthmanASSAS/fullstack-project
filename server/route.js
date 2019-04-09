@@ -6,4 +6,7 @@ const requireToken = passport.authenticate("jwt", { session: false });
 
 module.exports = app => {
     app.post("/signup", AuthentificationController.signup);
+    app.get('/ressourceSecrete', requireToken, (req, res)=>{
+        res.send({code:42})
+    })
 };
