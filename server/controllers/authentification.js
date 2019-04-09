@@ -4,7 +4,7 @@ const _ = require('lodash')
 exports.signup = (req, res, next) => {
     const { email, password } = req.body;
     
-    User.findOne({email}, (err, existingUser)=> {
+    User.findOne({email}, (err, existingUser) =>{
         if(err){
             return next(err)
         }
