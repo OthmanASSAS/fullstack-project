@@ -1,6 +1,9 @@
-const AuthentificationController = require('./controllers/authentification')
+const AuthentificationController = require("./controllers/authentification");
+require("./services/passport");
+const passport = require("passport");
 
-module.exports = (app) => {
-  
-    app.post('/signup', AuthentificationController.signup);
-}
+const requireToken = passport.authenticate("jwt", { session: false });
+
+module.exports = app => {
+    app.post("/signup", AuthentificationController.signup);
+};
