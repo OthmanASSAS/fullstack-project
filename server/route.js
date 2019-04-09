@@ -1,5 +1,6 @@
+const AuthentificationController = require('./controllers/authentification')
+
 module.exports = (app) => {
-    app.get('/', (req, res, next)=> {
-        res.send({serverData:['Stratocaster', 'Gibson', 'Ibanez']})
-    })
+  
+    app.post('/signup', AuthentificationController.signup);
 }
